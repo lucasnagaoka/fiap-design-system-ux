@@ -5,10 +5,9 @@
   "license": "MIT",
   "exports": {
     "./button": {
-      "types": "./src/button/button.tsx",
+      "types": "./src/button/button.d.ts",
       "import": "./dist/button.mjs",
-      "require": "./dist/button.js",
-      "default": "./dist/button.js"
+      "require": "./dist/button.js"
     }
   },
   "scripts": {
