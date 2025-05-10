@@ -1,9 +1,5 @@
 import type { JSX } from 'react';
-
-export interface ButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  children: React.ReactNode;
-}
+import type { ButtonProps } from './button.types';
 
 export function Button({ children, ...other }: ButtonProps): JSX.Element {
   return (
