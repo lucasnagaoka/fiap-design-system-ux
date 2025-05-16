@@ -19,6 +19,16 @@ const FIAP_DS_TYPOGRAPHY = {
     'line-height': '24px',
     weight: '400',
   },
+  small: {
+    'font-size': '14px',
+    'line-height': '20px',
+    weight: '100',
+  },
+  button: {
+    'font-size': '16px',
+    'line-height': '16px',
+    weight: '500',
+  },
 };
 
 export { FIAP_DS_TYPOGRAPHY };
