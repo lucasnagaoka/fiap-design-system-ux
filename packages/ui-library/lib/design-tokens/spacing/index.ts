@@ -1,15 +1,15 @@
 const FIAP_DS_SPACING = {
-  s0: '0px',
-  s1: '4px',
-  s2: '8px',
-  s3: '12px',
-  s4: '16px',
-  s5: '20px',
-  s6: '24px',
-  s7: '32px',
-  s8: '40px',
-  s9: '48px',
-  s10: '64px',
+  s0: 0,
+  s1: 4,
+  s2: 8,
+  s3: 12,
+  s4: 16,
+  s5: 20,
+  s6: 24,
+  s7: 32,
+  s8: 40,
+  s9: 48,
+  s10: 64,
 };
 
 export { FIAP_DS_SPACING };
