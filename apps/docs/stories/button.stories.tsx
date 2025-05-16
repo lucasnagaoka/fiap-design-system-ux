@@ -1,4 +1,4 @@
-import { Button } from '@fiap-ds/ui/button';
+import { Button } from '@fiap-design-system/ui';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const meta: Meta<typeof Button> = {
