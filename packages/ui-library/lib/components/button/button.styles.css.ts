@@ -13,9 +13,7 @@ const button = style({
   lineHeight: FIAP_DS_TYPOGRAPHY.button['line-height'],
   fontWeight: FIAP_DS_TYPOGRAPHY.button.weight,
   textAlign: 'center',
-  borderColor: FIAP_DS_COLORS.primary[900],
-  borderWidth: '1px',
-  borderStyle: 'solid',
+  borderWidth: 0,
 });
 
 const buttonPrimary = style({
@@ -26,11 +24,17 @@ const buttonPrimary = style({
 const buttonSecondary = style({
   backgroundColor: FIAP_DS_COLORS.white[100],
   color: FIAP_DS_COLORS.primary[900],
+  borderColor: FIAP_DS_COLORS.primary[900],
+  borderWidth: '1px',
+  borderStyle: 'solid',
 });
 
 const buttonTertiary = style({
-  backgroundColor: 'yellow',
-  color: 'white',
+  backgroundColor: FIAP_DS_COLORS.white[100],
+  color: FIAP_DS_COLORS.black[25],
+  borderColor: FIAP_DS_COLORS.black[25],
+  borderWidth: '1px',
+  borderStyle: 'solid',
 });
 
 export { button, buttonPrimary, buttonSecondary, buttonTertiary };
