@@ -8,6 +8,10 @@ const meta: Meta<typeof Button> = {
       control: { type: 'radio' },
       options: ['button', 'submit', 'reset'],
     },
+    variant: {
+      control: { type: 'select' },
+      options: ['primary', 'secondary', 'tertiary'],
+    },
   },
 };
 
@@ -26,7 +30,7 @@ export const Primary: Story = {
       {...props}
       onClick={(): void => {
         // eslint-disable-next-line no-alert -- alert for demo
-        alert('Hello from Turborepo!');
+        alert('Hello from FIAP Design System!');
       }}
     >
       Hello
@@ -36,11 +40,12 @@ export const Primary: Story = {
   args: {
     children: 'Hello',
     type: 'button',
-    style: {
-      color: 'blue',
-      border: '1px solid gray',
-      padding: 10,
-      borderRadius: 10,
-    },
+    variant: 'primary',
+    // style: {
+    //   color: 'blue',
+    //   border: '1px solid gray',
+    //   padding: 10,
+    //   borderRadius: 10,
+    // },
   },
 };
