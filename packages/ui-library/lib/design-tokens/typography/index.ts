@@ -1,4 +1,7 @@
 const FIAP_DS_TYPOGRAPHY = {
+  body: {
+    'font-family': 'Roboto, sans-serif',
+  },
   h1: {
     'font-size': '48px',
     'line-height': '56px',
