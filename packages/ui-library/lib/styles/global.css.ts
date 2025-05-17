@@ -12,7 +12,3 @@ globalStyle('html, body', {
   fontFamily: theme.fontFamily,
   WebkitFontSmoothing: 'antialiased',
 });
-
-globalStyle('input', {
-  fontFamily: theme.fontFamily,
-});
