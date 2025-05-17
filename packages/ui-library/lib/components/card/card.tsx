@@ -1,6 +1,6 @@
-import React from 'react';
 import { CardTitle } from './card-title/card-title';
 import { CardSubTitle } from './card-subtitle/card-subtitle';
+
 import type { CardProps } from './card.types';
 
 export function Card({
