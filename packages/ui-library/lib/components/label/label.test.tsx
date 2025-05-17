@@ -6,6 +6,12 @@ describe('Label component', () => {
   it('Should render a Label', () => {
     render(<Label htmlFor='label' children='Label' />);
 
-    expect(screen.getByText('Label')).toBeTruthy();
+    expect(screen.getByText('Label')).toBeInTheDocument();
+  });
+
+  it('Should take a label snapshot', () => {
+    const { asFragment } = render(<Label htmlFor='label' children='Label' />);
+
+    expect(asFragment).toMatchSnapshot();
   });
 });
