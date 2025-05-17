@@ -8,7 +8,7 @@ const button = style({
   borderRadius: FIAP_DS_SPACING.s2,
   width: '100%',
   minWidth: FIAP_DS_SPACING.s6,
-  maxWidth: FIAP_DS_SPACING.s10 * 2,
+  maxWidth: FIAP_DS_SPACING.s10 * 3.125,
   fontSize: FIAP_DS_TYPOGRAPHY.p['font-size'],
   lineHeight: FIAP_DS_TYPOGRAPHY.button['line-height'],
   fontWeight: FIAP_DS_TYPOGRAPHY.button.weight,
