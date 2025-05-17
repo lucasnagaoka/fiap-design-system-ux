@@ -36,7 +36,8 @@ export const Primary: Story = {
   render: (props) => <Card {...props}>Hello</Card>,
   name: 'Card',
   args: {
-    children: 'Hello',
+    imageUrl: 'https://placehold.co/380x204',
+    imageAltText: 'Receita',
     title: 'Title',
     subtitle: 'Subtitle',
   },
