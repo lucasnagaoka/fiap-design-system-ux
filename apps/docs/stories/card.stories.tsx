@@ -4,13 +4,21 @@ import type { Meta, StoryObj } from '@storybook/react';
 const meta: Meta<typeof Card> = {
   component: Card,
   argTypes: {
-    type: {
-      control: { type: 'radio' },
-      options: ['button', 'submit', 'reset'],
+    title: {
+      control: 'text',
+      description: 'Title of the card',
+      table: {
+        type: { summary: 'string' },
+        defaultValue: { summary: 'null' },
+      },
     },
-    variant: {
-      control: { type: 'select' },
-      options: ['primary', 'secondary', 'tertiary'],
+    subtitle: {
+      control: 'text',
+      description: 'Subtitle of the card',
+      table: {
+        type: { summary: 'string' },
+        defaultValue: { summary: 'null' },
+      },
     },
   },
 };
@@ -29,13 +37,7 @@ export const Primary: Story = {
   name: 'Card',
   args: {
     children: 'Hello',
-    type: 'button',
-    variant: 'primary',
-    // style: {
-    //   color: 'blue',
-    //   border: '1px solid gray',
-    //   padding: 10,
-    //   borderRadius: 10,
-    // },
+    title: 'Title',
+    subtitle: 'Subtitle',
   },
 };
