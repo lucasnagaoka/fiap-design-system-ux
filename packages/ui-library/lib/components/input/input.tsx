@@ -1,4 +1,5 @@
 import clsx from 'clsx';
+import { fontText } from '../../styles/font.css';
 import { input, inputPrimary, inputSecondary } from './input.styles.css';
 
 import type { JSX } from 'react';
@@ -20,7 +21,10 @@ export function Input({
   }
 
   return (
-    <input className={clsx([input, getVariantClass(variant)])} {...other} />
+    <input
+      className={clsx([fontText, input, getVariantClass(variant)])}
+      {...other}
+    />
   );
 }
 
