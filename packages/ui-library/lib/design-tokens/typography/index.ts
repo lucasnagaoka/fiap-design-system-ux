@@ -30,7 +30,7 @@ const FIAP_DS_TYPOGRAPHY = {
   button: {
     'font-size': '16px',
     'line-height': '16px',
-    weight: '500',
+    weight: '400',
   },
 };
 
