@@ -6,7 +6,6 @@ import { FIAP_DS_TYPOGRAPHY } from '../../design-tokens/typography';
 
 const label = style({
   padding: FIAP_DS_SPACING.s2,
-  width: '100%',
   fontSize: FIAP_DS_TYPOGRAPHY.small['font-size'],
   lineHeight: FIAP_DS_TYPOGRAPHY.small['line-height'],
   fontWeight: FIAP_DS_TYPOGRAPHY.small.weight,
