@@ -1,4 +1,5 @@
 import { clsx } from 'clsx';
+import { fontText } from '../../styles/font.css';
 import {
   button,
   buttonPrimary,
@@ -28,7 +29,10 @@ export function Button({
   }
 
   return (
-    <button className={clsx([button, getVariantClass(variant)])} {...other}>
+    <button
+      className={clsx([fontText, button, getVariantClass(variant)])}
+      {...other}
+    >
       {children}
     </button>
   );

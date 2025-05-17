@@ -11,5 +11,5 @@ globalFontFace(defaultFont, {
 });
 
 export const fontText = style({
-  fontFamily: defaultFont,
+  fontFamily: `${defaultFont}, sans-serif`,
 });
