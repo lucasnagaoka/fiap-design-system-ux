@@ -1,7 +1,9 @@
 import { useId, type JSX } from 'react';
-import type { InputLabelProps } from './input-label.types';
 import { Label } from '../label/label';
 import { Input } from '../input/input';
+import { inputLabel } from './input-label.styles.css';
+
+import type { InputLabelProps } from './input-label.types';
 
 export function InputLabel({
   label,
@@ -12,14 +14,14 @@ export function InputLabel({
   const id = useId();
 
   return (
-    <>
+    <div className={inputLabel}>
       {label && (
         <Label htmlFor={`${id}-${label}`} {...labelProps}>
           {label}
         </Label>
       )}
       <Input id={`${id}-${label}`} variant={variant} {...inputProps} />
-    </>
+    </div>
   );
 }
 

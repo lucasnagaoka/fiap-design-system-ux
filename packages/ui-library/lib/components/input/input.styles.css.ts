@@ -8,7 +8,6 @@ const input = style({
   padding: FIAP_DS_SPACING.s2,
   borderRadius: FIAP_DS_SPACING.s2,
   border: 0,
-  width: '100%',
   fontSize: FIAP_DS_TYPOGRAPHY.button['font-size'],
   lineHeight: FIAP_DS_TYPOGRAPHY.button['line-height'],
   fontWeight: FIAP_DS_TYPOGRAPHY.button.weight,
