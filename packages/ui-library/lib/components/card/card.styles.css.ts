@@ -2,6 +2,7 @@ import { style } from '@vanilla-extract/css';
 
 import { FIAP_DS_SPACING } from '../../design-tokens/spacing';
 import { FIAP_DS_TYPOGRAPHY } from '../../design-tokens/typography';
+import { FIAP_DS_COLORS } from '../../design-tokens/colors';
 
 const card = style({
   display: 'flex',
@@ -32,6 +33,7 @@ const cardImage = style({
   objectFit: 'cover',
   objectPosition: 'center',
   boxSizing: 'border-box',
+  border: `2px solid ${FIAP_DS_COLORS.primary[900]}`,
 });
 
 export { card, cardHeader, cardImage };
