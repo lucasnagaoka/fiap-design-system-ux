@@ -13,4 +13,4 @@ export function H3({ children, ...other }: H3Props): JSX.Element {
   );
 }
 
-H3.displayName = 'Button';
+H3.displayName = 'H3';
