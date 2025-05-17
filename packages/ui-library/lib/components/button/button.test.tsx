@@ -33,17 +33,17 @@ describe('Button component', () => {
     const handleClick = vi.fn();
 
     render(
-      <Button children='Sing in' variant='primary' onClick={handleClick} />
+      <Button children='Sign in' variant='primary' onClick={handleClick} />
     );
-    fireEvent.click(screen.getByText('Sing in'));
+    fireEvent.click(screen.getByText('Sign in'));
 
     expect(handleClick).toHaveBeenCalled();
-    expect(screen.getByText('Sing in')).toBeTruthy();
+    expect(screen.getByText('Sign in')).toBeTruthy();
   });
 
   it('Should take a button snapshot', () => {
     const { asFragment } = render(
-      <Button children='Sing up' variant='primary' />
+      <Button children='Sign up' variant='primary' />
     );
 
     expect(asFragment).toMatchSnapshot();
