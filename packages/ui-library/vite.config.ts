@@ -1,3 +1,4 @@
+/// <reference types='vitest' />
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import dts from 'vite-plugin-dts';
@@ -15,6 +16,12 @@ export default defineConfig({
     vanillaExtractPlugin(),
     dts({ include: ['lib'] }),
   ],
+  test: {
+    globals: true,
+    environment: 'jsdom',
+    setupFiles: ['./lib/test/setup.ts'],
+    css: true,
+  },
   build: {
     copyPublicDir: false,
     lib: {
