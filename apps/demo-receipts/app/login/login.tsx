@@ -20,12 +20,12 @@ export function Login() {
           className='w-24 h-24 rounded-full flex items-center justify-center'
         />
 
-        <form onSubmit={handleSubmit} className='flex flex-col space-y-4 w-full'>
+        <form
+          onSubmit={handleSubmit}
+          className='flex flex-col space-y-4 w-full'
+        >
           <InputLabel
             label='Email'
-            labelProps={{
-              children: 'Label',
-            }}
             inputProps={{
               type: 'email',
               placeholder: 'Digite o seu email',
@@ -36,9 +36,6 @@ export function Login() {
 
           <InputLabel
             label='Senha'
-            labelProps={{
-              children: 'Label',
-            }}
             inputProps={{
               type: 'password',
               placeholder: 'Digite a sua senha',
@@ -48,14 +45,12 @@ export function Login() {
           />
 
           <div className='self-center'>
-            <Button
-              children='Acessar o flapp'
-              type='submit'
-              variant='primary'
-            />
+            <Button type='submit' variant='primary'>
+              Acessar o flapp
+            </Button>
           </div>
         </form>
       </div>
     </>
   );
-};
+}
