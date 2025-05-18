@@ -5,9 +5,13 @@ import { paragraph } from './paragraph.styles.css.ts';
 import type { JSX } from 'react';
 import type { ParagraphProps } from './paragraph.types.ts';
 
-export function Paragraph({ children, ...other }: ParagraphProps): JSX.Element {
+export function Paragraph({
+  className,
+  children,
+  ...other
+}: ParagraphProps): JSX.Element {
   return (
-    <p className={clsx([fontText, paragraph])} {...other}>
+    <p className={clsx([className, fontText, paragraph])} {...other}>
       {children}
     </p>
   );
