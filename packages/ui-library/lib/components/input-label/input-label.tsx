@@ -8,8 +8,8 @@ import type { InputLabelProps } from './input-label.types';
 export function InputLabel({
   label,
   variant = 'primary',
-  labelProps,
-  inputProps,
+  labelProps = {},
+  inputProps = {},
 }: InputLabelProps): JSX.Element {
   const id = useId();
 

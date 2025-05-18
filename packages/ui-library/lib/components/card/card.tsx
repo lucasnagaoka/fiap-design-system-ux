@@ -12,7 +12,6 @@ export function Card({
   subtitle,
   imageUrl,
   imageAltText,
-  children,
   ...other
 }: CardProps): React.JSX.Element {
   return (
@@ -22,10 +21,8 @@ export function Card({
         {subtitle ? <Card.SubTitle subtitle={subtitle} /> : null}
       </div>
       <Card.Content>
-        {imageUrl ? (
+        {imageUrl && (
           <img src={imageUrl} alt={imageAltText} className={cardImage} />
-        ) : (
-          children
         )}
       </Card.Content>
     </div>

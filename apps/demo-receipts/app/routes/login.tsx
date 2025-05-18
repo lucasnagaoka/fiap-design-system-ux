@@ -1,12 +1,12 @@
-import type { Route } from "./+types/home";
+import type { Route } from './+types/home';
 
-import { Login as LoginPage } from "../login/login";
-import { GridLayout } from "~/gridLayout/gridLayout";
+import { Login as LoginPage } from '../login/login';
+import { GridLayout } from '~/gridLayout/gridLayout';
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: 'Flapp' },
+    { name: 'description', content: 'Bem vindo!' },
   ];
 }
 

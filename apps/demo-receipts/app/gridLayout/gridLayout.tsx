@@ -10,7 +10,7 @@ interface GridLayoutProps {
 
 export function GridLayout({ children }: GridLayoutProps) {
   return (
-    <div className="min-h-screen grid place-items-center bg-white">
+    <div className='min-h-screen grid place-items-center bg-white'>
       {children}
     </div>
   );
