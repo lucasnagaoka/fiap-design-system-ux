@@ -68,7 +68,7 @@ export const Number: Story = {
   render: (props) => <InputLabel {...props} />,
   name: 'InputLabel > Primary > Number',
   args: {
-    label: 'Password',
+    label: 'Number',
     variant: 'primary',
     inputProps: {
       type: 'number',
