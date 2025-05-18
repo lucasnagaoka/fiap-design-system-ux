@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Button } from '@fiap-design-system/ui';
+import { Button, Card } from '@fiap-design-system/ui';
 import logoLight from '../assets/image.png';
 
 const recipes = [
@@ -87,27 +87,22 @@ export function Welcome() {
       />
 
       <div className='grid grid-cols-1 md:grid-cols-3 gap-4 w-full max-w-6xl'>
-        {/** Place here the component card*/}
         {currentRecipes.map((recipe, idx) => (
-          <div
+          <Card
+            children={recipe.image}
             key={idx}
-            className='border-2 border-violet-500 rounded-lg p-4 flex flex-col items-center'
-          >
-            <h2 className='font-bold text-lg'>{recipe.title}</h2>
-            <p className='text-sm text-gray-600 mb-4'>{recipe.description}</p>
-            <img
-              src={recipe.image}
-              alt={recipe.title}
-              className='w-full h-48 object-cover rounded-md'
-            />
-          </div>
+            title={recipe.title}
+            subtitle={recipe.description}
+            imageUrl={recipe.image}
+            imageAltText={recipe.title}
+          />
         ))}
       </div>
 
       <div className='flex gap-4'>
         <Button
           children='Anterior'
-          variant={isFirstPage ? 'tertiary': 'secondary'}
+          variant={isFirstPage ? 'tertiary' : 'secondary'}
           onClick={goToPrevious}
           disabled={isFirstPage}
         />
