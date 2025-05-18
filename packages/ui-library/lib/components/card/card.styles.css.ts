@@ -28,7 +28,7 @@ const cardHeader = style({
 
 const cardImage = style({
   width: '100%',
-  height: 'auto',
+  height: FIAP_DS_SPACING.s10 * 3.1875,
   borderRadius: FIAP_DS_SPACING.s2,
   objectFit: 'cover',
   objectPosition: 'center',

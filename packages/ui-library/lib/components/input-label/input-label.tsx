@@ -1,15 +1,15 @@
-import { useId, type JSX } from 'react';
-import { Label } from '../label/label';
-import { Input } from '../input/input';
-import { inputLabel } from './input-label.styles.css';
+import { useId, type JSX } from "react";
+import { Label } from "../label/label";
+import { Input } from "../input/input";
+import { inputLabel } from "./input-label.styles.css";
 
-import type { InputLabelProps } from './input-label.types';
+import type { InputLabelProps } from "./input-label.types";
 
 export function InputLabel({
   label,
-  variant = 'primary',
-  labelProps,
-  inputProps,
+  variant = "primary",
+  labelProps = {},
+  inputProps = {},
 }: InputLabelProps): JSX.Element {
   const id = useId();
 
@@ -25,4 +25,4 @@ export function InputLabel({
   );
 }
 
-InputLabel.displayName = 'InputLabel';
+InputLabel.displayName = "InputLabel";
