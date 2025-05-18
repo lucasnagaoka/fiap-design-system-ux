@@ -23,7 +23,7 @@ O projeto foi construído utilizando o Turborepo, que aplica o conceito de monor
 ```
 
 ### Dependências
-- Ter o node na versão minima `lts/jod` ou `22.14.0`
+- Ter o node na versão `lts` ou `>=22`
 - Ter o `pnpm` instalado na versão minima `10.10.0`
 
 ### Comandos úteis
@@ -37,7 +37,7 @@ Considere a execução dos comandos abaixo na raiz do projeto:
 
 Obs.: os comandos podem ser executados individualmente a partir da pasta de cada projeto também.
 
-### Executando o projeto
+## Executando o projeto
 
 - Acessar o repositório do projeto através do seguinte [link](https://github.com/lucasnagaoka/fiap-design-system-ux)
 - Clonar o repositório local na sua máquina e acessar a pasta clonada
